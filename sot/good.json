@@ -1,0 +1,407 @@
+{
+  "canonical": [
+    {
+      "URL": "https://kda-chain.org",
+      "Label": "kda-chain.org",
+      "Kind": "org"
+    },
+    {
+      "URL": "https://github.com/kda-community",
+      "Label": "kda-community org",
+      "Kind": "org"
+    },
+    {
+      "URL": "https://kda-chain.org/docs/",
+      "Label": "community docs",
+      "Kind": "docs"
+    },
+    {
+      "URL": "https://pact-util-lib.readthedocs.io/en/beta_0.11/",
+      "Label": "pact-util-lib",
+      "Kind": "docs"
+    },
+    {
+      "URL": "https://api.chainweb-community.org",
+      "Label": "mainnet01 API",
+      "Kind": "api"
+    },
+    {
+      "URL": "https://api.testnet.chainweb-community.org",
+      "Label": "testnet06 API",
+      "Kind": "api"
+    },
+    {
+      "URL": "https://fr-1.chainweb-community.org",
+      "Label": "mainnet bootstrap fr-1",
+      "Kind": "network"
+    },
+    {
+      "URL": "https://nl-1.chainweb-community.org",
+      "Label": "mainnet bootstrap nl-1",
+      "Kind": "network"
+    },
+    {
+      "URL": "https://pl-1.chainweb-community.org",
+      "Label": "mainnet bootstrap pl-1",
+      "Kind": "network"
+    },
+    {
+      "URL": "https://pl-2.chainweb-community.org",
+      "Label": "mainnet bootstrap pl-2",
+      "Kind": "network"
+    },
+    {
+      "URL": "https://ca-1.chainweb-community.org",
+      "Label": "mainnet bootstrap ca-1",
+      "Kind": "network"
+    },
+    {
+      "URL": "https://testnet06-1.chainweb-community.org",
+      "Label": "testnet06 bootstrap",
+      "Kind": "network"
+    },
+    {
+      "URL": "https://explorer.chainweb-community.org/mainnet",
+      "Label": "explorer mainnet",
+      "Kind": "explorer"
+    },
+    {
+      "URL": "https://explorer.chainweb-community.org/testnet",
+      "Label": "explorer testnet",
+      "Kind": "explorer"
+    },
+    {
+      "URL": "https://denascan.com",
+      "Label": "denascan",
+      "Kind": "explorer"
+    },
+    {
+      "URL": "https://explorer.eckowallet.com/",
+      "Label": "eckowallet",
+      "Kind": "explorer"
+    },
+    {
+      "URL": "https://tools.chainweb-community.org/",
+      "Label": "community tools",
+      "Kind": "tool"
+    },
+    {
+      "URL": "https://github.com/kda-community/kda-tool",
+      "Label": "kda-tool",
+      "Kind": "tool"
+    },
+    {
+      "URL": "https://ide.forkme.fun/",
+      "Label": "ForkMe Pact IDE",
+      "Kind": "tool"
+    },
+    {
+      "URL": "https://snapshots.chainweb-community.org",
+      "Label": "snapshots",
+      "Kind": "tool"
+    },
+    {
+      "URL": "https://api.chainweb-community.org/openapi/",
+      "Label": "Chainweb OpenAPI spec",
+      "Kind": "spec"
+    },
+    {
+      "URL": "https://nodes.kadena.ws/",
+      "Label": "network monitor",
+      "Kind": "monitor"
+    },
+    {
+      "URL": "https://github.com/kda-community/chainweb-node",
+      "Label": "chainweb-node",
+      "Kind": "org"
+    },
+    {
+      "URL": "https://github.com/kda-community/pact-5",
+      "Label": "pact-5",
+      "Kind": "org"
+    },
+    {
+      "URL": "https://github.com/kda-community/testnet06",
+      "Label": "testnet06 bootstrap tx",
+      "Kind": "org"
+    },
+    {
+      "URL": "https://github.com/kda-community/kadena-docs-new",
+      "Label": "kadena-docs source",
+      "Kind": "org"
+    },
+    {
+      "URL": "https://tools.chainweb-community.org/faucet/existing",
+      "Label": "mainnet faucet (existing account)",
+      "Kind": "faucet"
+    },
+    {
+      "URL": "https://tools.chainweb-community.org/faucet/new",
+      "Label": "testnet06 faucet (new account)",
+      "Kind": "faucet"
+    }
+  ],
+  "commands": [
+    {
+      "Name": "keys-generate",
+      "Network": "all",
+      "Purpose": "keys",
+      "Description": "Generate a fresh keypair for signing",
+      "Cmd": "kda-tool keygen -o key.yaml",
+      "Docs": "https://github.com/kda-community/kda-tool",
+      "Verify": ""
+    },
+    {
+      "Name": "deploy-module-mainnet",
+      "Network": "mainnet01",
+      "Purpose": "deploy",
+      "Description": "Deploy a Pact module to mainnet01 chain 0",
+      "Cmd": "kda-tool deploy --network mainnet01 --chain 0 --signer key.yaml --code module.pact",
+      "Docs": "https://github.com/kda-community/kda-tool",
+      "Verify": "TODO: confirm exact flags against kda-tool --help"
+    },
+    {
+      "Name": "deploy-module-testnet",
+      "Network": "testnet06",
+      "Purpose": "deploy",
+      "Description": "Deploy a Pact module to testnet06 chain 0",
+      "Cmd": "kda-tool deploy --network testnet06 --chain 0 --signer key.yaml --code module.pact",
+      "Docs": "https://github.com/kda-community/kda-tool",
+      "Verify": "TODO: confirm exact flags against kda-tool --help"
+    },
+    {
+      "Name": "query-list-modules",
+      "Network": "mainnet01",
+      "Purpose": "query",
+      "Description": "List deployed modules on mainnet01 chain 0 via the community endpoint",
+      "Cmd": "sot local mainnet01 0 '(list-modules)'",
+      "Docs": "https://kda-chain.org/docs/",
+      "Verify": ""
+    },
+    {
+      "Name": "query-describe-module",
+      "Network": "mainnet01",
+      "Purpose": "query",
+      "Description": "Describe the coin module on mainnet01 chain 0 via the community endpoint",
+      "Cmd": "sot local mainnet01 0 '(describe-module \"coin\")'",
+      "Docs": "https://kda-chain.org/docs/",
+      "Verify": ""
+    },
+    {
+      "Name": "query-cut",
+      "Network": "mainnet01",
+      "Purpose": "query",
+      "Description": "Current cut from the community mainnet01 endpoint",
+      "Cmd": "curl -sS 'https://api.chainweb-community.org/chainweb/0.0/mainnet01/cut' | jq",
+      "Docs": "https://kda-chain.org/docs/",
+      "Verify": ""
+    },
+    {
+      "Name": "query-block",
+      "Network": "mainnet01",
+      "Purpose": "query",
+      "Description": "Last 10 blocks on mainnet01 chain 0 via the community endpoint",
+      "Cmd": "curl -sS 'https://api.chainweb-community.org/chainweb/0.0/mainnet01/chain/0/block?limit=10' | jq",
+      "Docs": "https://kda-chain.org/docs/",
+      "Verify": ""
+    },
+    {
+      "Name": "query-header",
+      "Network": "mainnet01",
+      "Purpose": "query",
+      "Description": "Last 10 headers on mainnet01 chain 0 via the community endpoint",
+      "Cmd": "curl -sS 'https://api.chainweb-community.org/chainweb/0.0/mainnet01/chain/0/header?limit=10' | jq",
+      "Docs": "https://kda-chain.org/docs/",
+      "Verify": ""
+    },
+    {
+      "Name": "query-header-by-hash",
+      "Network": "mainnet01",
+      "Purpose": "query",
+      "Description": "Fetch a mainnet01 chain 0 header by its hash via the community endpoint",
+      "Cmd": "curl -sS -H 'Accept: application/json;blockheader-encoding=object' 'https://api.chainweb-community.org/chainweb/0.0/mainnet01/chain/0/header/FIe-VDNSOLAJtMtkQ75aTA0__r0iQadHwx73IYgWTE4' | jq",
+      "Docs": "https://kda-chain.org/docs/",
+      "Verify": ""
+    },
+    {
+      "Name": "query-payload",
+      "Network": "mainnet01",
+      "Purpose": "query",
+      "Description": "Fetch a mainnet01 chain 0 payload by its hash via the community endpoint",
+      "Cmd": "curl -sS 'https://api.chainweb-community.org/chainweb/0.0/mainnet01/chain/0/payload/2ixUhFWt9_1R-UemKElv7Of21nO3cscQqaTNnfZX5IA' | jq",
+      "Docs": "https://kda-chain.org/docs/",
+      "Verify": ""
+    },
+    {
+      "Name": "query-payload-outputs",
+      "Network": "mainnet01",
+      "Purpose": "query",
+      "Description": "Fetch the outputs of a mainnet01 chain 0 payload via the community endpoint",
+      "Cmd": "curl -sS 'https://api.chainweb-community.org/chainweb/0.0/mainnet01/chain/0/payload/2ixUhFWt9_1R-UemKElv7Of21nO3cscQqaTNnfZX5IA/outputs' | jq",
+      "Docs": "https://kda-chain.org/docs/",
+      "Verify": ""
+    },
+    {
+      "Name": "faucet-testnet06",
+      "Network": "testnet06",
+      "Purpose": "faucet",
+      "Description": "Request testnet06 coins via the community faucet",
+      "Cmd": "open https://tools.chainweb-community.org/faucet/new",
+      "Docs": "https://kda-chain.org/docs/",
+      "Verify": ""
+    },
+    {
+      "Name": "node-health-local",
+      "Network": "all",
+      "Purpose": "node",
+      "Description": "Local node health check",
+      "Cmd": "curl -sS http://localhost:1848/health-check",
+      "Docs": "https://kda-chain.org/docs/",
+      "Verify": ""
+    },
+    {
+      "Name": "query-list-modules-local",
+      "Network": "all",
+      "Purpose": "query",
+      "Description": "List deployed modules on a local node",
+      "Cmd": "sot local -host http://localhost:1848 mainnet01 0 '(list-modules)'",
+      "Docs": "https://kda-chain.org/docs/",
+      "Verify": ""
+    },
+    {
+      "Name": "query-describe-module-local",
+      "Network": "all",
+      "Purpose": "query",
+      "Description": "Describe the coin module on a local node",
+      "Cmd": "sot local -host http://localhost:1848 mainnet01 0 '(describe-module \"coin\")'",
+      "Docs": "https://kda-chain.org/docs/",
+      "Verify": ""
+    },
+    {
+      "Name": "query-cut-local",
+      "Network": "all",
+      "Purpose": "query",
+      "Description": "Current cut from a local node",
+      "Cmd": "curl -sS http://localhost:1848/chainweb/0.0/mainnet01/cut | jq",
+      "Docs": "https://kda-chain.org/docs/",
+      "Verify": ""
+    },
+    {
+      "Name": "query-block-local",
+      "Network": "all",
+      "Purpose": "query",
+      "Description": "Last 10 blocks on mainnet01 chain 0 from a local node",
+      "Cmd": "curl -sS 'http://localhost:1848/chainweb/0.0/mainnet01/chain/0/block?minheight=7315000\u0026limit=10' | jq",
+      "Docs": "https://kda-chain.org/docs/",
+      "Verify": ""
+    },
+    {
+      "Name": "query-header-local",
+      "Network": "all",
+      "Purpose": "query",
+      "Description": "Last 10 headers on mainnet01 chain 0 from a local node",
+      "Cmd": "curl -sS 'http://localhost:1848/chainweb/0.0/mainnet01/chain/0/header?limit=10' | jq",
+      "Docs": "https://kda-chain.org/docs/",
+      "Verify": ""
+    },
+    {
+      "Name": "query-header-by-hash-local",
+      "Network": "all",
+      "Purpose": "query",
+      "Description": "Fetch a mainnet01 chain 0 header by its hash from a local node",
+      "Cmd": "curl -sS -H 'Accept: application/json;blockheader-encoding=object' 'http://localhost:1848/chainweb/0.0/mainnet01/chain/0/header/FIe-VDNSOLAJtMtkQ75aTA0__r0iQadHwx73IYgWTE4' | jq",
+      "Docs": "https://kda-chain.org/docs/",
+      "Verify": ""
+    },
+    {
+      "Name": "query-payload-local",
+      "Network": "all",
+      "Purpose": "query",
+      "Description": "Fetch a mainnet01 chain 0 payload by its hash from a local node",
+      "Cmd": "curl -sS 'http://localhost:1848/chainweb/0.0/mainnet01/chain/0/payload/2ixUhFWt9_1R-UemKElv7Of21nO3cscQqaTNnfZX5IA' | jq",
+      "Docs": "https://kda-chain.org/docs/",
+      "Verify": ""
+    },
+    {
+      "Name": "query-payload-outputs-local",
+      "Network": "all",
+      "Purpose": "query",
+      "Description": "Fetch the outputs of a mainnet01 chain 0 payload from a local node",
+      "Cmd": "curl -sS 'http://localhost:1848/chainweb/0.0/mainnet01/chain/0/payload/2ixUhFWt9_1R-UemKElv7Of21nO3cscQqaTNnfZX5IA/outputs' | jq",
+      "Docs": "https://kda-chain.org/docs/",
+      "Verify": ""
+    },
+    {
+      "Name": "query-header-stream-local",
+      "Network": "all",
+      "Purpose": "query",
+      "Description": "Stream new headers as they arrive from a local node",
+      "Cmd": "curl -sS -N http://localhost:1848/chainweb/0.0/mainnet01/header/updates",
+      "Docs": "https://kda-chain.org/docs/",
+      "Verify": ""
+    },
+    {
+      "Name": "tx-poll-local",
+      "Network": "all",
+      "Purpose": "query",
+      "Description": "Poll a transaction result by request key",
+      "Cmd": "curl -sS -X POST http://localhost:1848/chainweb/0.0/mainnet01/chain/0/pact/api/v1/poll -H 'Content-Type: application/json' -d '{\"requestKeys\":[\"2ixUhFWt9_1R-UemKElv7Of21nO3cscQqaTNnfZX5IA\"]}' | jq",
+      "Docs": "https://kda-chain.org/docs/",
+      "Verify": ""
+    },
+    {
+      "Name": "tx-send-local",
+      "Network": "all",
+      "Purpose": "deploy",
+      "Description": "Submit a signed transaction to a local node",
+      "Cmd": "curl -sS -X POST http://localhost:1848/chainweb/0.0/mainnet01/chain/0/pact/api/v1/send -H 'Content-Type: application/json' -d @tx.json | jq",
+      "Docs": "https://kda-chain.org/docs/",
+      "Verify": ""
+    }
+  ],
+  "releases": [
+    {
+      "URL": "https://github.com/kda-community/chainweb-node/releases",
+      "Label": "chainweb-node",
+      "Note": ""
+    },
+    {
+      "URL": "https://github.com/kda-community/pact-5/releases",
+      "Label": "pact-5",
+      "Note": ""
+    },
+    {
+      "URL": "https://github.com/kda-community/kda-tool/releases",
+      "Label": "kda-tool",
+      "Note": ""
+    },
+    {
+      "URL": "https://github.com/kda-community/testnet06/releases",
+      "Label": "testnet06",
+      "Note": ""
+    }
+  ],
+  "ai_sections": [
+    {
+      "Kind": "ai-tooling",
+      "Title": "AI tooling",
+      "Status": "coming soon"
+    },
+    {
+      "Kind": "ai-skills",
+      "Title": "Skills",
+      "Status": "coming soon"
+    },
+    {
+      "Kind": "ai-prompts",
+      "Title": "Prompts",
+      "Status": "coming soon"
+    },
+    {
+      "Kind": "ai-harnesses",
+      "Title": "Harnesses",
+      "Status": "coming soon"
+    }
+  ],
+  "ai_entries": null
+}

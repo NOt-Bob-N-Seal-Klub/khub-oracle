@@ -1,0 +1,244 @@
+{
+  "deprecated": [
+    {
+      "URL": "https://github.com/kadena-io/chainweb-node",
+      "Label": "chainweb-node (old)",
+      "Category": "archived_repo",
+      "Reason": "Read-only since 2025-11-24. Forked to kda-community.",
+      "Successor": "https://github.com/kda-community/chainweb-node",
+      "ArchivedOn": "2025-11-24"
+    },
+    {
+      "URL": "https://github.com/kadena-io/pact-5",
+      "Label": "pact-5 (old)",
+      "Category": "archived_repo",
+      "Reason": "Read-only since 2025-11-26. Forked to kda-community.",
+      "Successor": "https://github.com/kda-community/pact-5",
+      "ArchivedOn": "2025-11-26"
+    },
+    {
+      "URL": "https://github.com/kadena-io/chainweb-mining-client",
+      "Label": "chainweb-mining-client (old)",
+      "Category": "archived_repo",
+      "Reason": "Read-only since 2025-11-26.",
+      "Successor": "https://github.com/kda-community/chainweb-mining-client",
+      "ArchivedOn": "2025-11-26"
+    },
+    {
+      "URL": "https://github.com/kadena-io/chainweb-miner",
+      "Label": "chainweb-miner (old)",
+      "Category": "archived_repo",
+      "Reason": "Archived 2022-11-02.",
+      "Successor": "https://github.com/kda-community/chainweb-mining-client",
+      "ArchivedOn": "2022-11-02"
+    },
+    {
+      "URL": "https://github.com/kadena-io/kadena-docs",
+      "Label": "kadena-docs (old)",
+      "Category": "archived_repo",
+      "Reason": "Archived 2023-10-18.",
+      "Successor": "https://kda-chain.org/docs/",
+      "ArchivedOn": "2023-10-18"
+    },
+    {
+      "URL": "https://github.com/kadena-io/developer-scripts",
+      "Label": "developer-scripts (old)",
+      "Category": "archived_repo",
+      "Reason": "Read-only since 2026-01-09.",
+      "Successor": "https://github.com/kda-community/developer-scripts",
+      "ArchivedOn": "2026-01-09"
+    },
+    {
+      "URL": "https://github.com/kadena-io/kda-tool",
+      "Label": "kda-tool (old)",
+      "Category": "archived_repo",
+      "Reason": "Read-only since 2026-01-09.",
+      "Successor": "https://github.com/kda-community/kda-tool",
+      "ArchivedOn": "2026-01-09"
+    },
+    {
+      "URL": "https://github.com/kadena-io/marmalade",
+      "Label": "marmalade (old)",
+      "Category": "archived_repo",
+      "Reason": "Read-only since 2026-01-09.",
+      "Successor": "https://github.com/kda-community/marmalade",
+      "ArchivedOn": "2026-01-09"
+    },
+    {
+      "URL": "https://github.com/kadena-io/kadenaswap",
+      "Label": "kadenaswap (old)",
+      "Category": "archived_repo",
+      "Reason": "Read-only since 2026-01-09.",
+      "Successor": "https://github.com/kda-community/kadenaswap",
+      "ArchivedOn": "2026-01-09"
+    },
+    {
+      "URL": "https://kadena-io.github.io/kadena-docs/",
+      "Label": "old-docs-site",
+      "Category": "dead_docs",
+      "Reason": "GitHub Pages retired after the docs repo was archived.",
+      "Successor": "https://kda-chain.org/docs/",
+      "ArchivedOn": "2023-10-18"
+    },
+    {
+      "URL": "https://kadena-io.github.io/kadena-docs/Public-Chain-Docs/",
+      "Label": "old-docs-public-chain",
+      "Category": "dead_docs",
+      "Reason": "Reported broken in chainweb-node issue #1353 back in 2022.",
+      "Successor": "https://kda-chain.org/docs/",
+      "ArchivedOn": "2023-10-18"
+    },
+    {
+      "URL": "https://docs.kadena.io/",
+      "Label": "docs.kadena.io (old)",
+      "Category": "dead_docs",
+      "Reason": "Parked after shutdown 2025-10-21.",
+      "Successor": "https://kda-chain.org/docs/",
+      "ArchivedOn": "2025-10-21"
+    },
+    {
+      "URL": "https://kadena.io/",
+      "Label": "kadena.io",
+      "Category": "dead_site",
+      "Reason": "Tombstoned 2025-10-21. Only serves a shutdown notice.",
+      "Successor": "https://kda-chain.org/",
+      "ArchivedOn": "2025-10-21"
+    },
+    {
+      "URL": "https://kadena.io/developers",
+      "Label": "kadena.io/developers",
+      "Category": "dead_site",
+      "Reason": "Deep link on a tombstoned domain.",
+      "Successor": "https://kda-chain.org/docs/",
+      "ArchivedOn": "2025-10-21"
+    },
+    {
+      "URL": "https://kadena.io/docs",
+      "Label": "kadena.io/docs",
+      "Category": "dead_site",
+      "Reason": "Deep link on a tombstoned domain.",
+      "Successor": "https://kda-chain.org/docs/",
+      "ArchivedOn": "2025-10-21"
+    },
+    {
+      "URL": "https://api.chainweb.com",
+      "Label": "api.chainweb.com (old)",
+      "Category": "deprecated_api",
+      "Reason": "Official API host. Decommissioned after shutdown.",
+      "Successor": "https://api.chainweb-community.org",
+      "ArchivedOn": ""
+    },
+    {
+      "URL": "https://us-e1.chainweb.com",
+      "Label": "us-e1 (old)",
+      "Category": "deprecated_api",
+      "Reason": "Official bootstrap node. DNS no longer resolves.",
+      "Successor": "https://fr-1.chainweb-community.org",
+      "ArchivedOn": ""
+    },
+    {
+      "URL": "https://us-w1.chainweb.com",
+      "Label": "us-w1 (old)",
+      "Category": "deprecated_api",
+      "Reason": "Official bootstrap node. DNS no longer resolves.",
+      "Successor": "https://nl-1.chainweb-community.org",
+      "ArchivedOn": ""
+    },
+    {
+      "URL": "https://eu1.chainweb.com",
+      "Label": "eu1 (old)",
+      "Category": "deprecated_api",
+      "Reason": "Official bootstrap node. DNS no longer resolves.",
+      "Successor": "https://nl-1.chainweb-community.org",
+      "ArchivedOn": ""
+    },
+    {
+      "URL": "https://ap1.chainweb.com",
+      "Label": "ap1 (old)",
+      "Category": "deprecated_api",
+      "Reason": "Official bootstrap node. DNS no longer resolves.",
+      "Successor": "https://ca-1.chainweb-community.org",
+      "ArchivedOn": ""
+    },
+    {
+      "URL": "https://ap2.chainweb.com",
+      "Label": "ap2 (old)",
+      "Category": "deprecated_api",
+      "Reason": "Official bootstrap node. DNS no longer resolves.",
+      "Successor": "https://ca-1.chainweb-community.org",
+      "ArchivedOn": ""
+    },
+    {
+      "URL": "https://api.mainnet.kadena.network",
+      "Label": "api.mainnet.kadena.network (old)",
+      "Category": "deprecated_api",
+      "Reason": "Legacy hostname from early tutorials.",
+      "Successor": "https://api.chainweb-community.org",
+      "ArchivedOn": ""
+    },
+    {
+      "URL": "https://github.com/kadena-io/pact/releases",
+      "Label": "pact-4-releases (old)",
+      "Category": "dead_tooling",
+      "Reason": "Pact 4 was EOL before the shutdown.",
+      "Successor": "https://github.com/kda-community/pact-5/releases",
+      "ArchivedOn": ""
+    },
+    {
+      "URL": "https://github.com/kadena-io/pact-lang-api",
+      "Label": "pact-lang-api (old)",
+      "Category": "dead_tooling",
+      "Reason": "Legacy JS library, superseded by @kadena/client.",
+      "Successor": "https://github.com/kadena-community/kadena.js",
+      "ArchivedOn": ""
+    },
+    {
+      "URL": "https://github.com/kadena-io/kadena.js",
+      "Label": "kadena.js on old org",
+      "Category": "dead_tooling",
+      "Reason": "Wrong org. Active monorepo is under kadena-community.",
+      "Successor": "https://github.com/kadena-community/kadena.js",
+      "ArchivedOn": ""
+    },
+    {
+      "URL": "https://github.com/kadena-io/chainweaver",
+      "Label": "chainweaver (old)",
+      "Category": "dead_tooling",
+      "Reason": "Archived. Was the offline signer + Pact playground.",
+      "Successor": "https://ide.forkme.fun/",
+      "ArchivedOn": ""
+    },
+    {
+      "URL": "testnet04",
+      "Label": "testnet04 network id",
+      "Category": "deprecated_network",
+      "Reason": "Decommissioned Feb 2025 with the Pact 5 upgrade.",
+      "Successor": "testnet06",
+      "ArchivedOn": "2025-02-06"
+    },
+    {
+      "URL": "testnet05",
+      "Label": "testnet05 network id",
+      "Category": "deprecated_network",
+      "Reason": "Decommissioned Feb 2025.",
+      "Successor": "testnet06",
+      "ArchivedOn": "2025-02-07"
+    },
+    {
+      "URL": "https://api.testnet.chainweb.com",
+      "Label": "testnet04/testnet05 API (old)",
+      "Category": "deprecated_api",
+      "Reason": "Old testnet API host. Decommissioned.",
+      "Successor": "https://api.testnet.chainweb-community.org",
+      "ArchivedOn": ""
+    },
+    {
+      "URL": "https://api.testnet.kadena.network",
+      "Label": "testnet legacy API",
+      "Category": "deprecated_api",
+      "Reason": "Legacy hostname from early tutorials.",
+      "Successor": "https://api.testnet.chainweb-community.org",
+      "ArchivedOn": ""
+    }
+  ]
+}

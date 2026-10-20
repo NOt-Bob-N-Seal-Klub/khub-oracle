@@ -1,0 +1,147 @@
+[database]
+url = "postgresql://postgres:postgres@localhost:5432/khub"
+
+[server]
+port = 8091
+cors_origin = "*"
+
+[[github]]
+name = "kda-community"
+org = "kda-community"
+poll_interval_secs = 900
+enabled = true
+
+[[web]]
+name = "kda-chain"
+url = "https://kda-chain.org/"
+poll_interval_secs = 1800
+enabled = true
+
+[[telegram]]
+name = "kadena-telegram"
+channel = "kadena_io"
+poll_interval_secs = 600
+enabled = true
+
+[[rss]]
+name = "reddit-kadena"
+url = "https://www.reddit.com/r/kadena/.rss"
+category = "community"
+poll_interval_secs = 600
+enabled = true
+
+[[rss]]
+name = "coindesk"
+url = "https://www.coindesk.com/arc/outboundfeeds/rss/"
+category = "crypto"
+poll_interval_secs = 900
+enabled = true
+
+[[rss]]
+name = "cointelegraph"
+url = "https://cointelegraph.com/rss"
+category = "crypto"
+poll_interval_secs = 900
+enabled = true
+
+[[rss]]
+name = "decrypt"
+url = "https://decrypt.co/feed"
+category = "crypto"
+poll_interval_secs = 900
+enabled = true
+
+[[rss]]
+name = "theblock"
+url = "https://www.theblock.co/rss.xml"
+category = "crypto"
+poll_interval_secs = 900
+enabled = true
+
+[[price]]
+name = "coinmarketcap-kadena"
+poll_interval_secs = 180
+enabled = true
+
+[[price]]
+name = "coingecko"
+poll_interval_secs = 120
+enabled = true
+
+[[price]]
+name = "coinpaprika"
+poll_interval_secs = 180
+enabled = true
+
+[[price]]
+name = "binance"
+poll_interval_secs = 60
+enabled = true
+
+[[github_releases]]
+name = "chainweb-node"
+org = "kda-community"
+repo = "chainweb-node"
+poll_interval_secs = 1800
+enabled = true
+
+[[github_releases]]
+name = "pact-5"
+org = "kda-community"
+repo = "pact-5"
+poll_interval_secs = 1800
+enabled = true
+
+[[github_releases]]
+name = "kda-tool"
+org = "kda-community"
+repo = "kda-tool"
+poll_interval_secs = 1800
+enabled = true
+
+[[social]]
+name = "social-stub"
+poll_interval_secs = 900
+enabled = false
+
+[[chainweb]]
+name = "chainweb-mainnet"
+network = "mainnet01"
+endpoints = [
+  "https://api.chainweb-community.org",
+  "https://fr-1.chainweb-community.org",
+  "https://nl-1.chainweb-community.org",
+  "https://pl-1.chainweb-community.org",
+  "https://pl-2.chainweb-community.org",
+  "https://ca-1.chainweb-community.org",
+]
+poll_interval_secs = 5
+enabled = true
+
+[[github_commits]]
+name = "chainweb-node-commits"
+org = "kda-community"
+repo = "chainweb-node"
+poll_interval_secs = 900
+enabled = true
+
+[[github_commits]]
+name = "pact-5-commits"
+org = "kda-community"
+repo = "pact-5"
+poll_interval_secs = 900
+enabled = true
+
+[[github_commits]]
+name = "kadena-js-commits"
+org = "kadena-community"
+repo = "kadena.js"
+poll_interval_secs = 900
+enabled = true
+
+[[github_commits]]
+name = "kda-tool-commits"
+org = "kda-community"
+repo = "kda-tool"
+poll_interval_secs = 900
+enabled = true

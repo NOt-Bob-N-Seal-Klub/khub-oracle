@@ -1,0 +1,29 @@
+kind	url	label
+org	https://kda-chain.org	kda-chain.org
+org	https://github.com/kda-community	kda-community org
+docs	https://kda-chain.org/docs/	community docs
+docs	https://pact-util-lib.readthedocs.io/en/beta_0.11/	pact-util-lib
+api	https://api.chainweb-community.org	mainnet01 API
+api	https://api.testnet.chainweb-community.org	testnet06 API
+network	https://fr-1.chainweb-community.org	mainnet bootstrap fr-1
+network	https://nl-1.chainweb-community.org	mainnet bootstrap nl-1
+network	https://pl-1.chainweb-community.org	mainnet bootstrap pl-1
+network	https://pl-2.chainweb-community.org	mainnet bootstrap pl-2
+network	https://ca-1.chainweb-community.org	mainnet bootstrap ca-1
+network	https://testnet06-1.chainweb-community.org	testnet06 bootstrap
+explorer	https://explorer.chainweb-community.org/mainnet	explorer mainnet
+explorer	https://explorer.chainweb-community.org/testnet	explorer testnet
+explorer	https://denascan.com	denascan
+explorer	https://explorer.eckowallet.com/	eckowallet
+tool	https://tools.chainweb-community.org/	community tools
+tool	https://github.com/kda-community/kda-tool	kda-tool
+tool	https://ide.forkme.fun/	ForkMe Pact IDE
+tool	https://snapshots.chainweb-community.org	snapshots
+spec	https://api.chainweb-community.org/openapi/	Chainweb OpenAPI spec
+monitor	https://nodes.kadena.ws/	network monitor
+org	https://github.com/kda-community/chainweb-node	chainweb-node
+org	https://github.com/kda-community/pact-5	pact-5
+org	https://github.com/kda-community/testnet06	testnet06 bootstrap tx
+org	https://github.com/kda-community/kadena-docs-new	kadena-docs source
+faucet	https://tools.chainweb-community.org/faucet/existing	mainnet faucet (existing account)
+faucet	https://tools.chainweb-community.org/faucet/new	testnet06 faucet (new account)

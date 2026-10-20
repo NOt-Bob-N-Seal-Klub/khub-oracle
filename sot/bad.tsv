@@ -1,0 +1,31 @@
+category	url	successor	reason
+archived_repo	https://github.com/kadena-io/chainweb-node	https://github.com/kda-community/chainweb-node	Read-only since 2025-11-24. Forked to kda-community.
+archived_repo	https://github.com/kadena-io/pact-5	https://github.com/kda-community/pact-5	Read-only since 2025-11-26. Forked to kda-community.
+archived_repo	https://github.com/kadena-io/chainweb-mining-client	https://github.com/kda-community/chainweb-mining-client	Read-only since 2025-11-26.
+archived_repo	https://github.com/kadena-io/chainweb-miner	https://github.com/kda-community/chainweb-mining-client	Archived 2022-11-02.
+archived_repo	https://github.com/kadena-io/kadena-docs	https://kda-chain.org/docs/	Archived 2023-10-18.
+archived_repo	https://github.com/kadena-io/developer-scripts	https://github.com/kda-community/developer-scripts	Read-only since 2026-01-09.
+archived_repo	https://github.com/kadena-io/kda-tool	https://github.com/kda-community/kda-tool	Read-only since 2026-01-09.
+archived_repo	https://github.com/kadena-io/marmalade	https://github.com/kda-community/marmalade	Read-only since 2026-01-09.
+archived_repo	https://github.com/kadena-io/kadenaswap	https://github.com/kda-community/kadenaswap	Read-only since 2026-01-09.
+dead_docs	https://kadena-io.github.io/kadena-docs/	https://kda-chain.org/docs/	GitHub Pages retired after the docs repo was archived.
+dead_docs	https://kadena-io.github.io/kadena-docs/Public-Chain-Docs/	https://kda-chain.org/docs/	Reported broken in chainweb-node issue #1353 back in 2022.
+dead_docs	https://docs.kadena.io/	https://kda-chain.org/docs/	Parked after shutdown 2025-10-21.
+dead_site	https://kadena.io/	https://kda-chain.org/	Tombstoned 2025-10-21. Only serves a shutdown notice.
+dead_site	https://kadena.io/developers	https://kda-chain.org/docs/	Deep link on a tombstoned domain.
+dead_site	https://kadena.io/docs	https://kda-chain.org/docs/	Deep link on a tombstoned domain.
+deprecated_api	https://api.chainweb.com	https://api.chainweb-community.org	Official API host. Decommissioned after shutdown.
+deprecated_api	https://us-e1.chainweb.com	https://fr-1.chainweb-community.org	Official bootstrap node. DNS no longer resolves.
+deprecated_api	https://us-w1.chainweb.com	https://nl-1.chainweb-community.org	Official bootstrap node. DNS no longer resolves.
+deprecated_api	https://eu1.chainweb.com	https://nl-1.chainweb-community.org	Official bootstrap node. DNS no longer resolves.
+deprecated_api	https://ap1.chainweb.com	https://ca-1.chainweb-community.org	Official bootstrap node. DNS no longer resolves.
+deprecated_api	https://ap2.chainweb.com	https://ca-1.chainweb-community.org	Official bootstrap node. DNS no longer resolves.
+deprecated_api	https://api.mainnet.kadena.network	https://api.chainweb-community.org	Legacy hostname from early tutorials.
+dead_tooling	https://github.com/kadena-io/pact/releases	https://github.com/kda-community/pact-5/releases	Pact 4 was EOL before the shutdown.
+dead_tooling	https://github.com/kadena-io/pact-lang-api	https://github.com/kadena-community/kadena.js	Legacy JS library, superseded by @kadena/client.
+dead_tooling	https://github.com/kadena-io/kadena.js	https://github.com/kadena-community/kadena.js	Wrong org. Active monorepo is under kadena-community.
+dead_tooling	https://github.com/kadena-io/chainweaver	https://ide.forkme.fun/	Archived. Was the offline signer + Pact playground.
+deprecated_network	testnet04	testnet06	Decommissioned Feb 2025 with the Pact 5 upgrade.
+deprecated_network	testnet05	testnet06	Decommissioned Feb 2025.
+deprecated_api	https://api.testnet.chainweb.com	https://api.testnet.chainweb-community.org	Old testnet API host. Decommissioned.
+deprecated_api	https://api.testnet.kadena.network	https://api.testnet.chainweb-community.org	Legacy hostname from early tutorials.
